@@ -1,0 +1,73 @@
+header {
+    background-color: rgba(153, 35, 147,0.5);
+    text-align: center;
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding:10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+nav ul li a {
+    color:aliceblue;
+    font-size: 20px;
+    border-style: none;
+    border-color: aliceblue;
+    border-radius: 15px;
+    border-width: 20px;
+    font-family: sans-serif;
+}
+
+nav ul li a:hover {
+    color:aliceblue;
+    font-size: 25px;
+    border-style: none;
+    border-color: aliceblue;
+}
+
+nav ul li a:active {
+    color:rgb(95, 30, 216);
+    font-size: 25px;
+    border-style: none;
+    border-color: aliceblue;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 2%;
+    margin: 1%;
+}
+.content {
+    background-color: rgba(153, 35, 147,1);
+    border-radius: 13px;
+    width: 100%;
+    color:aliceblue;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.container {
+    margin: 1em 1em 1em 1em;
+}
+
+body {
+    background-image: url("../Images/linux.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+p {
+    text-align: justify;
+}
