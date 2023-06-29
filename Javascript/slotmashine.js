@@ -108,13 +108,17 @@ function showData() {
 }
 
 function clickCoins() {
-  // score + coins Iteration 
+ if(score <=50 && coins <= 50){
+     // score + coins Iteration 
   score = score + 1;
   coins = coins + 1;
   // Schreiben in die Ausgabe
   o.innerHTML = "Du hast 1 Coin bekommen";
   // Schreiben in den score
   sc.innerHTML = score;
-   
-  
+  }else {
+    berechneSlotRandom();
+    pruefeGewinner();
+    showData();
+  }
 }
