@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="/CSS/opktik.css" >
+    <link rel="Stylesheet" href="/CSS/spiel_slot.css" >
+    <script src="/Javascript/slotmashine.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Linux VS Windows</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">Hauptseite</a></li>
+                <li><a href="/HTML/unterschied.html">Unterschied</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p>Du hast dich schon immer gefragt warum es Menschen gibt, die gerne mit Linux arbeiten ? 
+               Dann bist du hier genau richtig. Auf dieser Seite wird dir der Unterschied zwischen Windows und Linux sehr gut aufgezeigt.
+            </p>
+            <br>
+            <p>
+                Doch nicht so schnell. Du solltest vorher auf jeden Fall noch einmal am Hebel ziehen ;) oder doch mehrmals ? 
+            </p>
+            <br>
+            <p>
+                Hier sind die Spielregeln:
+            </p>
+            <br>
+            <ul>
+                <li>Bei 10 10 10 bekommst du 50 Punkte.</li>
+                <li>Bei 30 30 30 bekommst du 35 Punkte.</li>
+                <li>Bei 2 x 10 bekommst du 25 Punkte.</li>
+                <li>Bei 2 x 20 bekommst du 15 Punkte</li>
+                <li>Bei allem anderen verlierst du 10 Punkte.</li>
+
+            </ul>
+            <div id="spiel">
+                <div class="spiel_struktur">
+                
+                    <div id="slot1"></div>
+                    <div id="slot2"></div>
+                    <div id="slot3"></div>
+                    <div onclick="berechneSlotRandom();pruefeGewinner();showData()" id="activate"></div>
+
+                </div>
+                <div class="spiel_struktur">
+                    <div id="points"></div>
+                    <div id="output"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Impressum</p>
+        </footer>
+    </div>
+</body>
+</html>
