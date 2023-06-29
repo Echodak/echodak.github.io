@@ -116,9 +116,5 @@ function clickCoins() {
   o.innerHTML = "Du hast 1 Coin bekommen";
   // Schreiben in den score
   sc.innerHTML = score;
-  }else {
-    berechneSlotRandom();
-    pruefeGewinner();
-    showData();
   }
 }
