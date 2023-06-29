@@ -42,22 +42,22 @@ function pruefeGewinner(){
   {
     o.innerHTML = "Du hast nicht genügend Coins !!! ";
     coins = NULL;
-  }else if(slot1 == 20 && slot2 == 20 || slot2 == 20 && slot3 == 20 || slot1 == 20&& slot3 == 20)
-  {
-    out = "Du hast 15 Punkte gewonnen."
-    addCoins(15);
-  }else if(slot1 == 10 && slot2 == 10 || slot2 == 10 && slot3 == 10 || slot1 == 10 && slot3 == 10)
-  {
-    out = "Du hast 25 Punkte gewonnen."
-    addCoins(25);
-  }else if(slot1 == 30 && slot2 == 30 && slot3 == 30)
-  {
-    out = "Du hast 35 Punkte gewonnen."
-    addCoins(35);
   }else if(slot1 == 10 && slot2 == 10 && slot3 == 10)
   {
-    out = "Du hast 50 Punkte gewonnen."
+    out = "Du hast 50 Punkte gewonnen.";
     addCoins(50);
+  }else if(slot1 == 30 && slot2 == 30 && slot3 == 30)
+  {
+    out = "Du hast 35 Punkte gewonnen.";
+    addCoins(35);
+  }else if(slot1 == 10 && slot2 == 10 || slot2 == 10 && slot3 == 10 || slot1 == 10 && slot3 == 10)
+  {
+    out = "Du hast 25 Punkte gewonnen.";
+    addCoins(25);
+  }else if(slot1 == 20 && slot2 == 20 || slot2 == 20 && slot3 == 20 || slot1 == 20&& slot3 == 20)
+  {
+    out = "Du hast 15 Punkte gewonnen.";
+    addCoins(15);
   }else{
     out = "Du hast 10 Punkte verloren."
     delCoins(10);
