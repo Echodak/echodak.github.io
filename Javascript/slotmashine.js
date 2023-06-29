@@ -34,9 +34,13 @@ function delCoins(x){
 
 // bestimmt die Bedinungen, wann man gewonnen hat.
 function pruefeGewinner(){
-  if(coins <=0 || coins == 5)
+  if(coins <=0)
   {
     o.innerHTML = "Du hast alles verloren !!! ";
+    coins = NULL;
+  }else if(coins == 5)
+  {
+    o.innerHTML = "Du hast nicht genügend Coins !!! ";
     coins = NULL;
   }else if(slot1 == 20 && slot2 == 20 || slot2 == 20 && slot3 == 20 || slot1 == 20&& slot3 == 20)
   {
